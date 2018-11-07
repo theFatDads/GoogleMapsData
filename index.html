@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple Map</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    #map {
+      height: 100%;
+      width: 100%;
+    }
+
+    /* Optional: Makes the sample page fill the window. */
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+          lat: 41,
+          lng: -74,
+        },
+        zoom: 11,
+      });
+      let jsonlist;
+      let locations = []
+      //Get the JSON file
+      let request = new XMLHttpRequest();
+      request.open('GET', 'https://data.ct.gov/resource/5e4g-stz3.json');
+      request.responseType = 'json';
+      request.send();
+      //Once recieved, pull out our information, and iterate each into a marker.
+      request.onload = function () {
+        jsonlist = request.response;
+        console.log(jsonlist);
+        for (x of jsonlist) {
+          let lat = parseFloat(x.location_1.latitude)
+          let long = parseFloat(x.location_1.longitude)
+          locations.push({latlng:{lat: lat, lng: long},name:x.location_name,address:x.address,city:x.city,state:x.state})
+        }
+        for (let i = 0; i < locations.length; i++) {
+          let marker = new google.maps.Marker({
+            position: locations[i].latlng,
+            map: map,
+            title: locations[i].name,
+          });
+          let infoWindow = new google.maps.InfoWindow({
+          content: "<div><h4>"+locations[i].name+"</h4><div>"+locations[i].address + " " + locations[i].city + ", " + locations[i].state + " " + 
+            "\n <a href='https://www.google.com/maps/place/785+Park+Ave,+Bloomfield,+CT'>Get directions"+"</a></div>",
+          maxWidth: 200,
+          });
+          marker.addListener('click', function() {
+          infoWindow.open(map, marker);
+          });
+        }
+      }
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0ryZpgxKmnM81pq9e-tAbh7Zu39G5BBI&callback=initMap"
+    async defer></script>
+</body>
+
+</html>
