@@ -1,0 +1,1197 @@
+[ {
+  "location_1" : {
+    "latitude" : "41.332809",
+    "human_address" : "{\"address\":\"2 ELM ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06401-3310\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.073171"
+  },
+  "location_name" : "ANSONIA POLICE DEPARTMENT",
+  "address" : "2 ELM ST",
+  "city" : "ANSONIA",
+  "credentialid" : "1075890",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.385239",
+    "human_address" : "{\"address\":\"49 PLUMTREES RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06801-1616\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.398882"
+  },
+  "location_name" : "BETHEL POLICE DEPARTMENT",
+  "address" : "49 PLUMTREES RD",
+  "city" : "BETHEL",
+  "credentialid" : "1231136",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.829045",
+    "human_address" : "{\"address\":\"785 PARK AVE\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06002-2444\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.733347"
+  },
+  "location_name" : "BLOOMFIELD POLICE DEPARTMENT",
+  "address" : "785 PARK AVE",
+  "city" : "BLOOMFIELD",
+  "credentialid" : "1234064",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.674226",
+    "human_address" : "{\"address\":\"131 NORTH MAIN STREET\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06010\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.946121"
+  },
+  "location_name" : "BRISTOL POLICE DEPARTMENT",
+  "address" : "131 NORTH MAIN STREET",
+  "city" : "BRISTOL",
+  "credentialid" : "1424496",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.467519",
+    "human_address" : "{\"address\":\"63 SILVERMINE RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06804-2014\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.404679"
+  },
+  "location_name" : "BROOKFIELD POLICE DEPARTMENT",
+  "address" : "63 SILVERMINE RD",
+  "city" : "BROOKFIELD",
+  "credentialid" : "1131779",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.816578",
+    "human_address" : "{\"address\":\"45 RIVER RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06019-3174\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.920008"
+  },
+  "location_name" : "CANTON POLICE DEPARTMENT",
+  "address" : "45 RIVER RD",
+  "city" : "COLLINSVILLE",
+  "credentialid" : "1081985",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.511207",
+    "human_address" : "{\"address\":\"500 HIGHLAND AVE\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06410-2249\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.899175"
+  },
+  "location_name" : "CHESHIRE POLICE UNION",
+  "address" : "500 HIGHLAND AVE",
+  "city" : "CHESHIRE",
+  "credentialid" : "1115844",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.354857",
+    "human_address" : "{\"address\":\"295 MERIDIAN ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06340-4012\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.070771"
+  },
+  "location_name" : "CITY OF GROTON POLICE DEPARTMENT",
+  "address" : "295 MERIDIAN ST",
+  "city" : "GROTON",
+  "credentialid" : "1075254",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.275668",
+    "human_address" : "{\"address\":\"170 E MAIN ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06413-2116\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.511842"
+  },
+  "location_name" : "CLINTON POLICE DEPARTMENT",
+  "address" : "170 E MAIN ST",
+  "city" : "CLINTON",
+  "credentialid" : "1244132",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.574632",
+    "human_address" : "{\"address\":\"127 NORWICH AVE\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06415-1230\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.327985"
+  },
+  "location_name" : "COLCHESTER RESIDENT TROOPERS OFFICE",
+  "address" : "127 NORWICH AVE",
+  "city" : "COLCHESTER",
+  "credentialid" : "1064593",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.777738",
+    "human_address" : "{\"address\":\"1585 MAIN ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06238-1749\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.309663"
+  },
+  "location_name" : "COVENTRY POLICE DEPARTMENT",
+  "address" : "1585 MAIN ST",
+  "city" : "COVENTRY",
+  "credentialid" : "1250708",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.400377",
+    "human_address" : "{\"address\":\"375 MAIN STREET\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06810\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.458409"
+  },
+  "location_name" : "DANBURY POLICE DEPARTMENT",
+  "address" : "375 MAIN STREET",
+  "city" : "DANBURY",
+  "credentialid" : "1453343",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.06904",
+    "human_address" : "{\"address\":\"25 HECKER AVE\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06820-5308\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.479388"
+  },
+  "location_name" : "DARIEN POLICE DEPARTMENT",
+  "address" : "25 HECKER AVE",
+  "city" : "DARIEN",
+  "credentialid" : "1177013",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.456947",
+    "human_address" : "{\"address\":\"90 LAKESIDE RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06488-2508\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.233696"
+  },
+  "location_name" : "DESPP DIVISION OF STATE POLICE TROOP A",
+  "address" : "90 LAKESIDE RD",
+  "city" : "SOUTHBURY",
+  "credentialid" : "1343027",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "42.042467",
+    "human_address" : "{\"address\":\"463B ASHLEY FALLS ROAD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06018\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.325516"
+  },
+  "location_name" : "DESPP DIVISION OF STATE POLICE TROOP B",
+  "address" : "463B ASHLEY FALLS ROAD",
+  "city" : "NORTH CANAAN",
+  "credentialid" : "1342876",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.88635",
+    "human_address" : "{\"address\":\"1320 TOLLAND STAGE RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06084-3111\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.323246"
+  },
+  "location_name" : "DESPP DIVISION OF STATE POLICE TROOP C",
+  "address" : "1320 TOLLAND STAGE RD",
+  "city" : "TOLLAND",
+  "credentialid" : "1342241",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.809336",
+    "human_address" : "{\"address\":\"55 WESTCOTT RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06239-2929\"}",
+    "needs_recoding" : false,
+    "longitude" : "-71.876592"
+  },
+  "location_name" : "DESPP DIVISION OF STATE POLICE TROOP D",
+  "address" : "55 WESTCOTT RD",
+  "city" : "DANIELSON",
+  "credentialid" : "1342230",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.463809",
+    "human_address" : "{\"address\":\"\",\"city\":\"GOVERNOR JOHN DAVIS LODGE TURNPIKE\",\"state\":\"CT\",\"zip\":\"06382-0306\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.111924"
+  },
+  "location_name" : "DESPP DIVISION OF STATE POLICE TROOP E",
+  "address" : "GOVERNOR JOHN DAVIS LODGE TURNPIKE",
+  "city" : "UNCASVILLE",
+  "credentialid" : "1343492",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.29266",
+    "human_address" : "{\"address\":\"315 SPENCER PLAINS RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06498-3509\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.429886"
+  },
+  "location_name" : "DESPP DIVISION OF STATE POLICE TROOP F",
+  "address" : "315 SPENCER PLAINS RD",
+  "city" : "WESTBROOK",
+  "credentialid" : "1342890",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.173261",
+    "human_address" : "{\"address\":\"149 PROSPECT ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06604-4621\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.191877"
+  },
+  "location_name" : "DESPP DIVISION OF STATE POLICE TROOP G",
+  "address" : "149 PROSPECT ST",
+  "city" : "BRIDGEPORT",
+  "credentialid" : "1342902",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.759804",
+    "human_address" : "{\"address\":\"100R WASHINGTON ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06106-4405\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.682111"
+  },
+  "location_name" : "DESPP DIVISION OF STATE POLICE TROOP H",
+  "address" : "100R WASHINGTON ST",
+  "city" : "HARTFORD",
+  "credentialid" : "1342197",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.432934",
+    "human_address" : "{\"address\":\"631 AMITY RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06524-3026\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.993243"
+  },
+  "location_name" : "DESPP DIVISION OF STATE POLICE TROOP I",
+  "address" : "631 AMITY RD",
+  "city" : "BETHANY",
+  "credentialid" : "1342215",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.579353",
+    "human_address" : "{\"address\":\"15A OLD HARTFORD RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06415-2714\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.339296"
+  },
+  "location_name" : "DESPP DIVISION OF STATE POLICE TROOP K",
+  "address" : "15A OLD HARTFORD RD",
+  "city" : "COLCHESTER",
+  "credentialid" : "1342184",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.735689",
+    "human_address" : "{\"address\":\"452 BANTAM RD\",\"city\":\"A\",\"state\":\"CT\",\"zip\":\"06759-3201\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.215821"
+  },
+  "location_name" : "DESPP DIVISION OF STATE POLICE TROOP L",
+  "address" : "452 BANTAM RD # A",
+  "city" : "LITCHFIELD",
+  "credentialid" : "1343032",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.583425",
+    "human_address" : "{\"address\":\"20 E HIGH ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06424-1002\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.503361"
+  },
+  "location_name" : "EAST HAMPTON POLICE DEPARTMENT",
+  "address" : "20 E HIGH ST",
+  "city" : "EAST HAMPTON",
+  "credentialid" : "1531447",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.780422",
+    "human_address" : "{\"address\":\"31 SCHOOL ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06108\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.611324"
+  },
+  "location_name" : "EAST HARTFORD POLICE DEPT",
+  "address" : "31 SCHOOL ST",
+  "city" : "E  HARTFORD",
+  "credentialid" : "1121660",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.323173",
+    "human_address" : "{\"address\":\"278 MAIN ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06357-3102\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.193851"
+  },
+  "location_name" : "EAST LYME POLICE DEPARTMENT",
+  "address" : "278 MAIN ST",
+  "city" : "NIANTIC",
+  "credentialid" : "1176683",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.903188",
+    "human_address" : "{\"address\":\"33 ARBOR WAY\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06029-3354\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.464406"
+  },
+  "location_name" : "ELLINGTON POLICE DEPARTMENT",
+  "address" : "33 ARBOR WAY",
+  "city" : "ELLINGTON",
+  "credentialid" : "1345706",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.99737",
+    "human_address" : "{\"address\":\"293 ELM ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06082-3907\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.555095"
+  },
+  "location_name" : "ENFIELD POLICE DEPARTMENT",
+  "address" : "293 ELM ST",
+  "city" : "ENFIELD",
+  "credentialid" : "1070221",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.139625",
+    "human_address" : "{\"address\":\"100 REEF RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06824-5919\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.256607"
+  },
+  "location_name" : "FAIRFIELD POLICE DEPARTMENT",
+  "address" : "100 REEF RD",
+  "city" : "FAIRFIELD",
+  "credentialid" : "1188115",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.748653",
+    "human_address" : "{\"address\":\"319 NEW BRITAIN AVE\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06085-1224\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.873663"
+  },
+  "location_name" : "FARMINGTON POLICE DEPARTMENT",
+  "address" : "319 NEW BRITAIN AVE",
+  "city" : "UNIONVILLE",
+  "credentialid" : "1130540",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.706063",
+    "human_address" : "{\"address\":\"2108 MAIN STREET\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06033\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.608024"
+  },
+  "location_name" : "GLASTONBURY POLICE DEPARTMENT",
+  "address" : "2108 MAIN STREET",
+  "city" : "GLASTONBURY",
+  "credentialid" : "1418016",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.025359",
+    "human_address" : "{\"address\":\"11 BRUCE PL\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06830-6535\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.624672"
+  },
+  "location_name" : "GREENWICH POLICE DEPARTMENT",
+  "address" : "11 BRUCE PL",
+  "city" : "GREENWICH",
+  "credentialid" : "1035891",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.297507",
+    "human_address" : "{\"address\":\"400 CHURCH ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06437-2004\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.687703"
+  },
+  "location_name" : "GUILFORD POLICE DEPARTMENT",
+  "address" : "400 CHURCH ST",
+  "city" : "GUILFORD",
+  "credentialid" : "1145078",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.383609",
+    "human_address" : "{\"address\":\"2900 Dixwell Avenue\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06518\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.903781"
+  },
+  "location_name" : "Hamden Police Department",
+  "address" : "2900 Dixwell Avenue",
+  "city" : "Hamden",
+  "credentialid" : "1599067",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.772331",
+    "human_address" : "{\"address\":\"253 HIGH ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06103-1041\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.677839"
+  },
+  "location_name" : "HARTFORD POLICE DEPARTMENT",
+  "address" : "253 HIGH ST",
+  "city" : "HARTFORD",
+  "credentialid" : "1262646",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.659102",
+    "human_address" : "{\"address\":\"44 MAIN ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06248-1515\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.362435"
+  },
+  "location_name" : "HEBRON RESIDENT TROOPER'S OFFICE",
+  "address" : "44 MAIN ST",
+  "city" : "HEBRON",
+  "credentialid" : "1401473",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.442079",
+    "human_address" : "{\"address\":\"737 Colonel Ledyard Highway\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06339\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.017"
+  },
+  "location_name" : "LEDYARD POLICE DEPARTMENT",
+  "address" : "737 Colonel Ledyard Highway",
+  "city" : "LEDYARD",
+  "credentialid" : "1187123",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.295519",
+    "human_address" : "{\"address\":\"9 CAMPUS DR\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06443-2562\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.57469"
+  },
+  "location_name" : "MADISON POLICE DEPARTMENT",
+  "address" : "9 CAMPUS DR",
+  "city" : "MADISON",
+  "credentialid" : "1268362",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.783609",
+    "human_address" : "{\"address\":\"239 MIDDLE TPKE E\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06040-4358\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.511894"
+  },
+  "location_name" : "MANCHESTER POLICE DEPARTMENT",
+  "address" : "239 MIDDLE TPKE E",
+  "city" : "MANCHESTER",
+  "credentialid" : "1058229",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.466045",
+    "human_address" : "{\"address\":\"101 PEQUOT TRL\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06338-3823\"}",
+    "needs_recoding" : false,
+    "longitude" : "-71.958538"
+  },
+  "location_name" : "MASHANTUCKET PEQUOT TRIBAL POLICE DEPARTMENT",
+  "address" : "101 PEQUOT TRL",
+  "city" : "MASHANTUCKET",
+  "credentialid" : "1332185",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.538203",
+    "human_address" : "{\"address\":\"50 WEST MAIN ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06451\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.804582"
+  },
+  "location_name" : "MERIDEN POLICE DEPARTMENT",
+  "address" : "50 WEST MAIN ST",
+  "city" : "MERIDEN",
+  "credentialid" : "1231342",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.227522",
+    "human_address" : "{\"address\":\"430 BOSTON POST ROAD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06460\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.069746"
+  },
+  "location_name" : "MILFORD POLICE DEPARTMENT",
+  "address" : "430 BOSTON POST ROAD",
+  "city" : "MILFORD",
+  "credentialid" : "1408371",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.492638",
+    "human_address" : "{\"address\":\"49 SANDY DESERT RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06382-1111\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.095818"
+  },
+  "location_name" : "MOHEGAN TRIBAL POLICE",
+  "address" : "49 SANDY DESERT RD",
+  "city" : "UNCASVILLE",
+  "credentialid" : "1338385",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.332551",
+    "human_address" : "{\"address\":\"7 FAN HILL ROAD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06468\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.207425"
+  },
+  "location_name" : "MONROE POLICE DEPARTMENT",
+  "address" : "7 FAN HILL ROAD",
+  "city" : "MONROE",
+  "credentialid" : "1487394",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.450027",
+    "human_address" : "{\"address\":\"911 NORWICH NEW LONDON TPKE\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06382-1917\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.106561"
+  },
+  "location_name" : "MONTVILLE POLICE DEPARTMENT",
+  "address" : "911 NORWICH NEW LONDON TPKE",
+  "city" : "UNCASVILLE",
+  "credentialid" : "1145845",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.505565",
+    "human_address" : "{\"address\":\"211 SPRING ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06770-2990\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.054712"
+  },
+  "location_name" : "NAUGATUCK POLICE DEPARTMENT",
+  "address" : "211 SPRING ST",
+  "city" : "NAUGATUCK",
+  "credentialid" : "1070785",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.66566",
+    "human_address" : "{\"address\":\"10 CHESTNUT ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06051-2654\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.781313"
+  },
+  "location_name" : "NEW BRITAIN POLICE DEPARTMENT",
+  "address" : "10 CHESTNUT ST",
+  "city" : "NEW BRITAIN",
+  "credentialid" : "1349023",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.140987",
+    "human_address" : "{\"address\":\"174 SOUTH AVE\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06840-5728\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.491262"
+  },
+  "location_name" : "NEW CANAAN POLICE DEPARTMENT",
+  "address" : "174 SOUTH AVE",
+  "city" : "NEW CANAAN",
+  "credentialid" : "1036989",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.299736",
+    "human_address" : "{\"address\":\"1 UNION AVE\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06519-1721\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.925135"
+  },
+  "location_name" : "NEW HAVEN POLICE DEPARTMENT",
+  "address" : "1 UNION AVE",
+  "city" : "NEW HAVEN",
+  "credentialid" : "1117409",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.356544",
+    "human_address" : "{\"address\":\"5 GOVERNOR WINTHROP BLVD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06320-6423\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.096003"
+  },
+  "location_name" : "NEW LONDON POLICE DEPARTMENT",
+  "address" : "5 GOVERNOR WINTHROP BLVD",
+  "city" : "NEW LONDON",
+  "credentialid" : "1067834",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.586193",
+    "human_address" : "{\"address\":\"49 POPLAR ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06776-2920\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.407866"
+  },
+  "location_name" : "NEW MILFORD POLICE DEPARTMENT",
+  "address" : "49 POPLAR ST",
+  "city" : "NEW MILFORD",
+  "credentialid" : "1241492",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.697027",
+    "human_address" : "{\"address\":\"131 CEDAR ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06111-2644\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.731088"
+  },
+  "location_name" : "NEWINGTON POLICE DEPARTMENT",
+  "address" : "131 CEDAR ST",
+  "city" : "NEWINGTON",
+  "credentialid" : "1181426",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.409475",
+    "human_address" : "{\"address\":\"3 MAIN ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06470-2104\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.305722"
+  },
+  "location_name" : "NEWTOWN POLICE DEPARTMENT",
+  "address" : "3 MAIN ST",
+  "city" : "NEWTOWN",
+  "credentialid" : "1256084",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.09657",
+    "human_address" : "{\"address\":\"1 MONROE ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06854-3103\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.418958"
+  },
+  "location_name" : "NORWALK DEPARTMENT OF POLICE SERVICE",
+  "address" : "1 MONROE ST",
+  "city" : "NORWALK",
+  "credentialid" : "1221357",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.522143",
+    "human_address" : "{\"address\":\"70 THAMES ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06360-5646\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.081757"
+  },
+  "location_name" : "NORWICH POLICE DEPARTMENT",
+  "address" : "70 THAMES ST",
+  "city" : "NORWICH",
+  "credentialid" : "1157341",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.264474",
+    "human_address" : "{\"address\":\"314 LAMBERT ROAD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06477\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.006928"
+  },
+  "location_name" : "ORANGE POLICE DEPARTMENT",
+  "address" : "314 LAMBERT ROAD",
+  "city" : "ORANGE",
+  "credentialid" : "1523092",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.434116",
+    "human_address" : "{\"address\":\"429 OXFORD RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06478-1231\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.116374"
+  },
+  "location_name" : "OXFORD RESIDENT TROOPERS OFFICE",
+  "address" : "429 OXFORD RD",
+  "city" : "OXFORD",
+  "credentialid" : "1452041",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.705018",
+    "human_address" : "{\"address\":\"210 NORWICH RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06374-1622\"}",
+    "needs_recoding" : false,
+    "longitude" : "-71.905439"
+  },
+  "location_name" : "PLAINFIELD POLICE DEPARTMENT",
+  "address" : "210 NORWICH RD",
+  "city" : "PLAINFIELD",
+  "credentialid" : "1294297",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.673017",
+    "human_address" : "{\"address\":\"19 NEAL CT\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06062-1603\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.865397"
+  },
+  "location_name" : "PLAINVILLE POLICE DEPARTMENT",
+  "address" : "19 NEAL CT",
+  "city" : "PLAINVILLE",
+  "credentialid" : "1116202",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.679092",
+    "human_address" : "{\"address\":\"80 MAIN ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06786-5107\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.000921"
+  },
+  "location_name" : "PLYMOUTH POLICE DEPARTMENT",
+  "address" : "80 MAIN ST",
+  "city" : "TERRYVILLE",
+  "credentialid" : "1427199",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.575749",
+    "human_address" : "{\"address\":\"265 MAIN STREET\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06480\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.638547"
+  },
+  "location_name" : "PORTLAND POLICE DEPARTMENT",
+  "address" : "265 MAIN STREET",
+  "city" : "PORTLAND",
+  "credentialid" : "1441599",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.920588",
+    "human_address" : "{\"address\":\"189 CHURCH ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06260-1537\"}",
+    "needs_recoding" : false,
+    "longitude" : "-71.91069"
+  },
+  "location_name" : "PUTNAM POLICE DEPARTMENT",
+  "address" : "189 CHURCH ST",
+  "city" : "PUTNAM",
+  "credentialid" : "1163781",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.303853",
+    "human_address" : "{\"address\":\"96 HILL RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06896-2007\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.382999"
+  },
+  "location_name" : "REDDING POLICE DEPT.",
+  "address" : "96 HILL RD",
+  "city" : "REDDING",
+  "credentialid" : "1057464",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.280673",
+    "human_address" : "{\"address\":\"76 EAST RIDGE RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06877-5022\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.493872"
+  },
+  "location_name" : "RIDGEFIELD POLICE DEPT.",
+  "address" : "76 EAST RIDGE RD",
+  "city" : "RIDGEFIELD",
+  "credentialid" : "1035832",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.32056",
+    "human_address" : "{\"address\":\"85 WHEELER ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06484\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.111926"
+  },
+  "location_name" : "SHELTON POLICE DEPARTMENT (K9 UNIT)",
+  "address" : "85 WHEELER ST",
+  "city" : "SHELTON",
+  "credentialid" : "1051847",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.880113",
+    "human_address" : "{\"address\":\"933 HOPMEADOW ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06070-1822\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.800071"
+  },
+  "location_name" : "SIMSBURY POLICE DEPARTMENT",
+  "address" : "933 HOPMEADOW ST",
+  "city" : "SIMSBURY",
+  "credentialid" : "1045811",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.984191",
+    "human_address" : "{\"address\":\"451 MAIN ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06071-2051\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.459681"
+  },
+  "location_name" : "SOMERS POLICE DEPARTMENT",
+  "address" : "451 MAIN ST",
+  "city" : "SOMERS",
+  "credentialid" : "1234907",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.836636",
+    "human_address" : "{\"address\":\"151 SAND HILL RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06074-2026\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.551883"
+  },
+  "location_name" : "SOUTH WINDSOR POLICE DEPARTMENT",
+  "address" : "151 SAND HILL RD",
+  "city" : "SOUTH WINDSOR",
+  "credentialid" : "1157538",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.621535",
+    "human_address" : "{\"address\":\"69 LAZY LN\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06489-1763\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.875557"
+  },
+  "location_name" : "SOUTHINGTON POLICE DEPARTMENT",
+  "address" : "69 LAZY LN",
+  "city" : "SOUTHINGTON",
+  "credentialid" : "1078015",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.953551",
+    "human_address" : "{\"address\":\"2 MAIN ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06076-1411\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.303269"
+  },
+  "location_name" : "STAFFORD POLICE",
+  "address" : "2 MAIN ST",
+  "city" : "STAFFORD SPRINGS",
+  "credentialid" : "1253849",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.368416",
+    "human_address" : "{\"address\":\"173 S BROAD ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06379-1920\"}",
+    "needs_recoding" : false,
+    "longitude" : "-71.861542"
+  },
+  "location_name" : "STONINGTON POLICE DEPARTMENT",
+  "address" : "173 S BROAD ST",
+  "city" : "PAWCATUCK",
+  "credentialid" : "1275903",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.200726",
+    "human_address" : "{\"address\":\"900 LONGBROOK AVE\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06614-5007\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.129242"
+  },
+  "location_name" : "STRATFORD POLICE",
+  "address" : "900 LONGBROOK AVE",
+  "city" : "STRATFORD",
+  "credentialid" : "1184244",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.98495",
+    "human_address" : "{\"address\":\"911 MOUNTAIN RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06078-3074\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.684871"
+  },
+  "location_name" : "SUFFIELD POLICE DEPARTMENT",
+  "address" : "911 MOUNTAIN RD",
+  "city" : "SUFFIELD",
+  "credentialid" : "1335205",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.674456",
+    "human_address" : "{\"address\":\"158 MAIN ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06787-1744\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.072593"
+  },
+  "location_name" : "THOMASTON POLICE DEPARTMENT",
+  "address" : "158 MAIN ST",
+  "city" : "THOMASTON",
+  "credentialid" : "1332018",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.81225",
+    "human_address" : "{\"address\":\"576 MAIN ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06790-3710\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.121278"
+  },
+  "location_name" : "TORRINGTON POLICE DEPARTMENT",
+  "address" : "576 MAIN ST",
+  "city" : "TORRINGTON",
+  "credentialid" : "1205523",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.34337",
+    "human_address" : "{\"address\":\"68 GROTON LONG POINT RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06340-4806\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.010872"
+  },
+  "location_name" : "TOWN OF GROTON POLICE DEPT",
+  "address" : "68 GROTON LONG POINT RD",
+  "city" : "GROTON",
+  "credentialid" : "1122632",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.234989",
+    "human_address" : "{\"address\":\"158 EDISON RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06611-4139\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.218714"
+  },
+  "location_name" : "TRUMBULL POLICE DEPARTMENT",
+  "address" : "158 EDISON RD",
+  "city" : "TRUMBULL",
+  "credentialid" : "1191675",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.809347",
+    "human_address" : "{\"address\":\"126 NORTH EAGLEVILLE ROAD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06269\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.261024"
+  },
+  "location_name" : "UNIVERSITY OF CONNECTICUT POLICE DEPARTMENT",
+  "address" : "126 NORTH EAGLEVILLE ROAD",
+  "city" : "STORRS MANSFIELD",
+  "credentialid" : "1442706",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.839371",
+    "human_address" : "{\"address\":\"725 HARTFORD TPKE\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06066-5115\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.464945"
+  },
+  "location_name" : "VERNON POLICE DEPARTMENT",
+  "address" : "725 HARTFORD TPKE",
+  "city" : "VERNON ROCKVILLE",
+  "credentialid" : "1165866",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.554554",
+    "human_address" : "{\"address\":\"255 E MAIN ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06702-2301\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.036131"
+  },
+  "location_name" : "WATERBURY POLICE DEPARTMENT",
+  "address" : "255 E MAIN ST",
+  "city" : "WATERBURY",
+  "credentialid" : "1143916",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.344559",
+    "human_address" : "{\"address\":\"41 AVERY LN\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06385-2202\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.137161"
+  },
+  "location_name" : "WATERFORD POLICE DEPARTMENT",
+  "address" : "41 AVERY LN",
+  "city" : "WATERFORD",
+  "credentialid" : "1043428",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.597995",
+    "human_address" : "{\"address\":\"195 FRENCH ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06795-2921\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.106733"
+  },
+  "location_name" : "WATERTOWN POLICE DEPARTMENT",
+  "address" : "195 FRENCH ST",
+  "city" : "WATERTOWN",
+  "credentialid" : "1078793",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.201701",
+    "human_address" : "{\"address\":\"56 NORFIELD ROAD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06883\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.37836"
+  },
+  "location_name" : "WESTON POLICE DEPARTMENT",
+  "address" : "56 NORFIELD ROAD",
+  "city" : "WESTON",
+  "credentialid" : "1508431",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.140788",
+    "human_address" : "{\"address\":\"50 JESUP RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06880-4309\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.361895"
+  },
+  "location_name" : "WESTPORT POLICE DEPARTMENT",
+  "address" : "50 JESUP RD",
+  "city" : "WESTPORT",
+  "credentialid" : "1210344",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.713047",
+    "human_address" : "{\"address\":\"22 MEADOW ST\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06226-2507\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.213104"
+  },
+  "location_name" : "WILLIMANTIC POLICE DEPARTMENT",
+  "address" : "22 MEADOW ST",
+  "city" : "WILLIMANTIC",
+  "credentialid" : "1256095",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.189588",
+    "human_address" : "{\"address\":\"240 DANBURY RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06897-4008\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.426473"
+  },
+  "location_name" : "WILTON POLICE DEPARTMENT",
+  "address" : "240 DANBURY RD",
+  "city" : "WILTON",
+  "credentialid" : "1035797",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.921167",
+    "human_address" : "{\"address\":\"338 MAIN STREET\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06098\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.068856"
+  },
+  "location_name" : "WINCHESTER POLICE DEPARTMENT",
+  "address" : "338 MAIN STREET",
+  "city" : "WINSTED",
+  "credentialid" : "1201225",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.927721",
+    "human_address" : "{\"address\":\"4 VOLUNTEER DR\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06096-2134\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.647637"
+  },
+  "location_name" : "WINDSOR LOCKS POLICE DEPARTMENT",
+  "address" : "4 VOLUNTEER DR",
+  "city" : "WINDSOR LOCKS",
+  "credentialid" : "1058663",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.851933",
+    "human_address" : "{\"address\":\"340 BLOOMFIELD AVENUE\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06095\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.660769"
+  },
+  "location_name" : "WINDSOR POLICE DEPARTMENT",
+  "address" : "340 BLOOMFIELD AVENUE",
+  "city" : "WINDSOR",
+  "credentialid" : "1467498",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.578536",
+    "human_address" : "{\"address\":\"225 NICHOLS RD\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06716-2718\"}",
+    "needs_recoding" : false,
+    "longitude" : "-72.981443"
+  },
+  "location_name" : "WOLCOTT POLICE DEPT.",
+  "address" : "225 NICHOLS RD",
+  "city" : "WOLCOTT",
+  "credentialid" : "1055726",
+  "state" : "CT"
+}
+, {
+  "location_1" : {
+    "latitude" : "41.354375",
+    "human_address" : "{\"address\":\"4 MEETING HOUSE LANE\",\"city\":\"CT\",\"state\":\"\",\"zip\":\"06525\"}",
+    "needs_recoding" : false,
+    "longitude" : "-73.012425"
+  },
+  "location_name" : "WOODBRIDGE POLICE DEPARTMENT",
+  "address" : "4 MEETING HOUSE LANE",
+  "city" : "WOODBRIDGE",
+  "credentialid" : "1421704",
+  "state" : "CT"
+}
+ ]
