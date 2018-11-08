@@ -11,7 +11,7 @@
     #map {
       height: 90%;
       width: 90%;
-      margin:auto;
+      margin: auto;
       border: 4px outset rgb(137, 63, 223);
     }
 
@@ -47,51 +47,28 @@
         },
         zoom: 9,
       });
-      let jsonlist;
-      let locations = []
-      //Get the JSON file
-      let request = new XMLHttpRequest();
-      request.open('GET', 'TestData.json');
-      request.responseType = 'json';
-      request.send();
-      //Once recieved, pull out our information, and iterate each into a marker.
-      request.onload = function () {
-        jsonlist = request.response;
-        console.log("Recieved JSON File")
-        for (x of jsonlist) {
-          let lat = parseFloat(x.location_1.latitude)
-          let long = parseFloat(x.location_1.longitude)
-          locations.push({ // Pushes 
-            latlng: {
-              lat: lat,
-              lng: long,
-            },
-            name: x.location_name.caps(),
-            address: x.address.caps(),
-            city: x.city.caps(),
-            state: x.state,
-          })
+      map.data.loadGeoJson('https://data.ct.gov/api/geospatial/uem2-db2e?method=export&format=GeoJSON');
+      var infoWindow = new google.maps.InfoWindow({
+        maxWidth: 300,
+      })
+
+      map.data.addListener('click', function (event) {
+        var mark = event.feature
+        console.log(mark)
+        let markInfo = {
+          name: mark.getProperty("location_name").caps(),
+          address: mark.getProperty("address").caps(),
+          city: mark.getProperty("city").caps(),
+          state: mark.getProperty("state"),
         }
-        console.log(locations)
-        for (let i = 0; i < locations.length; i++) {
-          let marker = new google.maps.Marker({
-            position: locations[i].latlng,
-            map: map,
-            title: locations[i].name,
-          });
-          let url =
-            `https://www.google.com/maps/place/${locations[i].address.split(" ").join("+")},+${locations[i].city},+${locations[i].state}`
-          let fullBox =
-            `<div><h4>${locations[i].name}</h4><div>${locations[i].address} ${locations[i].city}, ${locations[i].state} <p><a href=${url}>Get Diretions</a></p></div>`
-          let infoWindow = new google.maps.InfoWindow({
-            content: fullBox,
-            maxWidth: 200,
-          });
-          marker.addListener('click', function () {
-            infoWindow.open(map, marker);
-          });
-        }
-      }
+        let url =
+          `https://www.google.com/maps/place/${markInfo.address.split(" ").join("+")},+${markInfo.city},+${markInfo.state}`
+        let fullBox =
+          `<div><h4>${markInfo.name}</h4><div>${markInfo.address} ${markInfo.city}, ${markInfo.state} <p><a href=${url}>Get Diretions</a></p></div>`
+        infoWindow.setContent(fullBox);
+        infoWindow.setPosition(event.feature.getGeometry().get());
+        infoWindow.open(map);
+      })
     }
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0ryZpgxKmnM81pq9e-tAbh7Zu39G5BBI&callback=initMap"
