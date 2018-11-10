@@ -45,8 +45,9 @@ function locate(geocoder, address) {
   })
 }
 
-function initgeoJSONMap(mapID, center, geoJSONLink) {
+function initgeoJSONMap(mapID, center, geoJSONLink,info) {
   'Initializes a google map, given a mapID, center for the map, and the link to a geoJSON file.'
+  'Info should be a list with the property directory: [name, address, city, state]'
   var map = new google.maps.Map(document.getElementById(mapID), {
     center: center,
     zoom: 9,
@@ -58,10 +59,10 @@ function initgeoJSONMap(mapID, center, geoJSONLink) {
   map.data.addListener('click', function (event) {
     var mark = event.feature;
     let markInfo = {
-      name: mark.getProperty("location_name").caps(),
-      address: mark.getProperty("address").caps(),
-      city: mark.getProperty("city").caps(),
-      state: mark.getProperty("state"),
+      name: mark.getProperty(info[0]).caps(),
+      address: mark.getProperty(info[1]).caps(),
+      city: mark.getProperty(info[2]).caps(),
+      state: mark.getProperty(info[3]),
     }
     let url = addresstoUrl(markInfo.address, markInfo.city, markInfo.state)
     let fullBox = formatInfoBox(markInfo.name, markInfo.address, markInfo.city, markInfo.state, url)
@@ -110,6 +111,7 @@ function initMap(mapID, center, geoLocatedData) {
     infoWindow.open(map)
   })
 }
+
 //OLD code for getting latitude and longitude, will use later to import geocoded JSON.
 // let jsonlist;
 // let request = new XMLHttpRequest();
@@ -155,9 +157,15 @@ function main() {
     lat: 41.5,
     lng: -72.63,
   };
+  var VT = {
+    lat: 44,
+    lng: -72.7
+  }
   var mainMap = "boxMap";
+  var randomDat = "http://geodata.vermont.gov/datasets/3a87ceb1e3b944b89598abe6c4169f85_0.geojson"
   var drugBox = "https://data.ct.gov/api/geospatial/uem2-db2e?method=export&format=GeoJSON";
   var careFacilities = "https://data.ct.gov/resource/htz8-fxbk.json";
-  initgeoJSONMap(mainMap, CT, drugBox);
+  initgeoJSONMap(mainMap, CT, drugBox,["location-name","address","city","state"]);
+  initgeoJSONMap("map2",VT,randomDat, ["LIBRARY","PRIMARYADD","TOWNNAME","COUNTY"])
 }
 main()
