@@ -1,5 +1,5 @@
 String.prototype.caps = function () {
-  `Capitalizes the first letter of each word`
+  `Capitalizes the first letter of each word, used for geoJSON files with all-caps addresses.`
   caps = []
   splitString = this.split(" ")
   for (let i = 0; i < splitString.length; i++) {
@@ -10,39 +10,45 @@ String.prototype.caps = function () {
   return caps
 }
 
-var geocoder = new google.maps.Geocoder();
-
-function addresstoUrl(address,city,state){
-  return `${address.split(" ").join("+")},+${city},+${state}`
+function addresstoUrl(address, city, state) {
+  'given an address, city and state string, return a Maps url to this address.'
+  return `https://www.google.com/maps/dir/?api=1&destination=${address.split(" ").join("+")},+${city},+${state}`
+  //return `https://www.google.com/maps/place/${address.split(" ").join("+")},+${city},+${state}`
 }
 
 function openMaps(url){
-  if((navigator.platform.indexOf("iPhone") != -1) || (navigator.platform.indexOf("iPod") != -1) || (navigator.platform.indexOf("iPad") != -1)){
-    window.open("maps://"+url.slice(12))
+  'opens map in native maps app if on mobile, otherwise opens map url in google maps.'
+  if ((navigator.platform.indexOf("iPhone") != -1) || (navigator.platform.indexOf("iPod") != -1) || (navigator.platform.indexOf("iPad") != -1)) {
+    window.open("maps://" + url.slice(12))
   } else {
     window.open(url);
+
   }
 }
-function geolocate(geocoder,address){
-  geocoder.geocode(
-    {'address':address},function(results,status){
-      if(status == 'OK'){
-        console.log(results)
-        return results
-      }
-      else {
-        console.log("Geolocation Error: " + status);
-      }
-    }
-  )
+
+function formatInfoBox(name, address, city, state, url) {
+  return `<div><h4>${name}</h4><div>${address} ${city}, ${state} <p><a onclick="openMaps('${url}')" href="#">Get Directions</a></p></div>`
 }
 
-function initgeoJSONMap(mapID, geoJSONLink) {
+function locate(geocoder, address) {
+  'Given an address string and a Google geocoder, returns an array with location information.'
+  geocoder.geocode({
+    'address': address,
+  }, function (results, status, geoResults) {
+    if (status == 'OK') {
+      var location = results[0].geometry.location;
+      console.log(results[0]);
+    } else {
+      return "ERROR";
+      console.log("Geolocation Error: " + status);
+    }
+  })
+}
+
+function initgeoJSONMap(mapID, center, geoJSONLink) {
+  'Initializes a google map, given a mapID, center for the map, and the link to a geoJSON file.'
   var map = new google.maps.Map(document.getElementById(mapID), {
-    center: {
-      lat: 41.5,
-      lng: -72.63,
-    },
+    center: center,
     zoom: 9,
   });
   map.data.loadGeoJson(geoJSONLink);
@@ -50,18 +56,15 @@ function initgeoJSONMap(mapID, geoJSONLink) {
     maxWidth: 300,
   })
   map.data.addListener('click', function (event) {
-    var mark = event.feature
+    var mark = event.feature;
     let markInfo = {
       name: mark.getProperty("location_name").caps(),
       address: mark.getProperty("address").caps(),
       city: mark.getProperty("city").caps(),
       state: mark.getProperty("state"),
     }
-    let convertedAddress = addresstoUrl(markInfo.address,markInfo.city,markInfo.state)
-    let url =
-      `https://www.google.com/maps/place/${convertedAddress}`
-    let fullBox =
-      `<div><h4>${markInfo.name}</h4><div>${markInfo.address}, ${markInfo.city}, ${markInfo.state}<p><a onclick="openMaps('${url}')" href="#">Get Directions</a></p></div>`
+    let url = addresstoUrl(markInfo.address, markInfo.city, markInfo.state)
+    let fullBox = formatInfoBox(markInfo.name, markInfo.address, markInfo.city, markInfo.state, url)
     infoWindow.setContent(fullBox);
     infoWindow.setPosition(event.feature.getGeometry().get());
     infoWindow.setOptions({
@@ -71,57 +74,90 @@ function initgeoJSONMap(mapID, geoJSONLink) {
   })
 }
 
-function initMap(mapID,geoLocatedData) {
+function initMap(mapID, center, geoLocatedData) {
+  'Creates a new map with plotted points given a map DIV id, a center for the map, and data that has been geocoded using the Google API.'
   var map = new google.maps.Map(document.getElementById(mapID), {
-    center: {
-      lat: 41.5,
-      lng: -72.63,
-    },
+    center: center,
     zoom: 9,
   });
-  let jsonlist;
-  var locations = []
-  //Get the JSON file
-  let request = new XMLHttpRequest();
-  request.open('GET', 'https://data.ct.gov/resource/htz8-fxbk.json');
-  request.responseType = 'json';
-  request.send();
-  //Once recieved, pull out our information, and iterate each into a marker.
-  request.onload = function () {
-    jsonlist = request.response;
-    console.log("Recieved JSON File")
-    for (x of jsonlist) {
-      address = `${x.address} + ${x.city} + ${x.town}`
-      locations.push(geolocate(geocoder,address))
-    }
-    console.log(locations)
-    for (let i = 0; i < locations.length; i++) {
-      let marker = new google.maps.Marker({
-        position: locations[i].latlng,
-        map: map,
-        title: locations[i].name,
-      });
-      let url =
-        `https://www.google.com/maps/place/${locations[i].address.split(" ").join("+")},+${locations[i].city},+${locations[i].state}`
-      let fullBox =
-        `<div><h4>${locations[i].name}</h4><div>${locations[i].address} ${locations[i].city}, ${locations[i].state} <p><a href=${url}>Get Diretions</a></p></div>`
-      let infoWindow = new google.maps.InfoWindow({
-        content: fullBox,
-        maxWidth: 200,
-      });
-      marker.addListener('click', function () {
-        infoWindow.open(map, marker);
-      });
-    }
+  var infoWindow = new google.maps.InfoWindow({
+    maxWidth: 300,
+  })
+  for (let i = 0; i < geoLocatedData.length; i++) {
+    let marker = new google.maps.Marker({
+      position: {
+        lat: geoLocatedData[i].geometry.bounds.l.j,
+        lng: geoLocatedData[i].geometry.bounds.j.j
+      },
+      map: map,
+      title: geoLocatedData.name, //TODO: ADD THIS PROPERTY WHEN GEOCODING.
+      data: geoLocatedData[i], //hopefully this just sets the data as a property of the marker.
+    })
   }
+  map.data.addListener('click', function (event) {
+    let mark = event.feature;
+    let name = mark.data.name //TODO: ADD THIS PROPERTY WHEN GEOCODING.
+    let address = mark.data.address_components[0] + " " + mark.data.address_components[1].short_name;
+    let city = mark.data.address_components[2].long_name;
+    let state = mark.data.address_components[4].short_name;
+    let url = addresstoUrl(address, city, state);
+    let fullBox = formatInfoBox(name, address, city, state, url);
+    infoWindow.setContent(fullBox);
+    infoWindow.setPosition(mark.getGeometry().get());
+    infoWindow.setOptions({
+      pixelOffset: new google.maps.Size(0,-40)
+    });
+    infoWindow.open(map)
+  })
 }
+//OLD code for getting latitude and longitude, will use later to import geocoded JSON.
+// let jsonlist;
+// let request = new XMLHttpRequest();
+// request.open('GET', 'https://data.ct.gov/resource/htz8-fxbk.json');
+// request.responseType = 'json';
+// request.send();
+//Once recieved, pull out our information, and iterate each into a marker.
+// request.onload = function () {
+//   jsonlist = request.response;
+//   console.log("Recieved JSON File")
+//   for (x of jsonlist) {
+//     address = `${x.address} + ${x.city} + ${x.town}`
+//     locations.push(locate(geocoder, address))
+//   }
 
+//   console.log(locations)
+//   for (let i = 0; i < locations.length; i++) {
+//     let marker = new google.maps.Marker({
+//       position: locations[i].latlng,
+//       map: map,
+//       title: locations[i].name,
+//     });
+//     let url =
+//       `https://www.google.com/maps/place/${locations[i].address.split(" ").join("+")},+${locations[i].city},+${locations[i].state}`
+//     let fullBox =
+//       `<div><h4>${locations[i].name}</h4><div>${locations[i].address} ${locations[i].city}, ${locations[i].state} <p><a href=${url}>Get Diretions</a></p></div>`
+//     let infoWindow = new google.maps.InfoWindow({
+//       content: fullBox,
+//       maxWidth: 200,
+//     });
+//     marker.addListener('click', function () {
+//       infoWindow.open(map, marker);
+//     });
+//   }
+// }
+// }
 
 function main() {
-  console.log(geolocate(geocoder,"Uconn"));
+  var geocoder = new google.maps.Geocoder(); //Creating the needed URL.
+  var MyHouse = locate(geocoder, "95 Kellers Farm Rd")
+  console.log(MyHouse);
+  var CT = { //Connecticut centered location
+    lat: 41.5,
+    lng: -72.63,
+  };
   var mainMap = "boxMap";
   var drugBox = "https://data.ct.gov/api/geospatial/uem2-db2e?method=export&format=GeoJSON";
   var careFacilities = "https://data.ct.gov/resource/htz8-fxbk.json";
-  initgeoJSONMap(mainMap, drugBox);
+  initgeoJSONMap(mainMap, CT, drugBox);
 }
 main()
