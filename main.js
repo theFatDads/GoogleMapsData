@@ -1,5 +1,11 @@
+/*
+Data2GoogleMap
+By Finn Navin, Christopher Vassallo, and Jack Violet
+Created for the 2018 Connecticut Tech Competition Finalist Round
+*/
+
 String.prototype.caps = function () {
-  `Capitalizes the first letter of each word, used for geoJSON files with all-caps addresses.`
+  /*Capitalizes the first letter of each word, used for geoJSON files with all-caps addresses.*/
   caps = []
   splitString = this.split(" ")
   for (let i = 0; i < splitString.length; i++) {
@@ -11,7 +17,8 @@ String.prototype.caps = function () {
 }
 
 function addressToURL(address,city,state){
-  'Given an address, City, and state string, generates an address based on the users device'
+  /*Given an address, City, and state string, generates an address to be used based on the users device
+  Picks Appple Maps on iPhones and iPads, and Google Maps for everything else.*/
   if ((navigator.platform.indexOf("iPhone") != -1) || (navigator.platform.indexOf("iPod") != -1) || (navigator.platform.indexOf("iPad") != -1)) {
     return `https://maps.apple.com/?q=${address.split(" ").join("+")},+${city},+${state}`
   } else {
@@ -20,12 +27,13 @@ function addressToURL(address,city,state){
 }
 
 function formatInfoBox(name, address, city, state, url) {
+  /* Formats the data for each marker on the map to be used in the info box. */
   return `<b>${name}</b><p>${address} ${city}, ${state} \n</br><a href="${url}">Get Directions</a></p>`
 }
 
 function initgeoJSONMap(mapID, center, geoJSONLink, info) {
-  'Initializes a google map, given a mapID, center for the map, and the link to a geoJSON file.'
-  'Info should be a list with the property directory: [name, address, city, state]'
+  /*Initializes a google map, given a mapID, center for the map, and the link to a geoJSON file.
+  Info should be a list with the property directory: [name, address, city, state]*/
   var map = new google.maps.Map(document.getElementById(mapID), {
     center: center,
     zoom: 7,
@@ -55,7 +63,7 @@ function initgeoJSONMap(mapID, center, geoJSONLink, info) {
 }
 
 function initGeocodeMap(mapID, center, geoLocatedData) {
-  'Creates a new map with plotted points given a map DIV id, a center for the map, and data that has been geocoded using the Google API.'
+  /*Creates a new map with plotted points given a map DIV id, a center for the map, and data that has been geocoded using the Google API.*/
   let geocoded;
   var map = new google.maps.Map(document.getElementById(mapID), {
     center: center,
