@@ -2,16 +2,20 @@
 ## About
 While working on our "Connecticut Tech Challenge" submission, my team wanted to implement data from data.ct.gov in Google Maps. We found that the data either was in geoJSON format and a general JSON file with data.
 
-If the files weren't GeoJSON, they typically lacked the latitude and longitude values we needed to plot the points on a Google Map. However, if use Google's Geolocation API 
+If the files weren't GeoJSON, they typically lacked the latitude and longitude values we needed to plot the points on a Google Map. We made a server which periodically processes data and outputs it as a list containing geolocated (locating latitude and longitude cooridnates from an address) data.
 
-Therefore, we made this library which simplifies the process. Data2GoogleMap Does the dirty work of making a Google Map with plotted points, and outputs each marker with clickable poi
+We had two types of data to process: GeoJSON files and data which was processed by geolocation.
+
+Therefore, we made this library which simplifies the entire process. Data2GoogleMap Does the dirty work of making a Google Map with plotted points, and outputs each marker with clickable point, with a link that redirects to Google Maps, or the user's default Map application on their phone.
+
+![Example](images/Example.png)
 
 ## Installation
 To use these functions in your code, you must:
 * Add the Google Maps Embed API with your Google Cloud API Key in HTML file.
 * Add this Javascript File to your HTML
 
-Your HTML file will look somehting like this:
+Your HTML file will look something like this:
 
 ```
 <html>
@@ -21,7 +25,7 @@ Your HTML file will look somehting like this:
       <div class="map" id="mapID"></div>
     </body>
   <script src="https://maps.googleapis.com/maps/api/js?key=[API KEY]"></script>
-  <script src="Data2Map"></script>
+  <script src="Data2Map.js"></script>
   <script src="[YourJsFile.js]"></script>
 </html>
 ```
