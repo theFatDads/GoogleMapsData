@@ -10,24 +10,17 @@ String.prototype.caps = function () {
   return caps
 }
 
-function addresstoUrl(address, city, state) {
-  'given an address, city and state string, return a Maps url to this address.'
-  return `https://www.google.com/maps/dir/?api=1&destination=${address.split(" ").join("+")},+${city},+${state}`
-  //return `https://www.google.com/maps/place/${address.split(" ").join("+")},+${city},+${state}`
-}
-
-function openMaps(url) {
-  'Opens map in native maps app if on mobile, otherwise opens map url in google maps.'
+function addressToURL(address,city,state){
+  'Given an address, City, and state string, generates an address based on the users device'
   if ((navigator.platform.indexOf("iPhone") != -1) || (navigator.platform.indexOf("iPod") != -1) || (navigator.platform.indexOf("iPad") != -1)) {
-    window.open("maps://" + url.slice(12))
+    return `https://www.maps.apple.com/?daddr=${address.split(" ").join("+")},+${city},+${state}`
   } else {
-    window.open(url);
-
+    return `https://www.google.com/maps/dir/?api=1&destination=${address.split(" ").join("+")},+${city},+${state}`
   }
 }
 
 function formatInfoBox(name, address, city, state, url) {
-  return `<b>${name}</b><p>${address} ${city}, ${state} \n</br><a onclick="openMaps('${url}')" href="#">Get Directions</a></p>`
+  return `<b>${name}</b><p>${address} ${city}, ${state} \n</br><a href="${url}">Get Directions</a></p>`
 }
 
 function initgeoJSONMap(mapID, center, geoJSONLink, info) {
@@ -50,7 +43,7 @@ function initgeoJSONMap(mapID, center, geoJSONLink, info) {
       city: mark.getProperty(info[2]).caps(),
       state: mark.getProperty(info[3]),
     }
-    let url = addresstoUrl(markInfo.address, markInfo.city, markInfo.state)
+    let url = addressToURL(markInfo.address, markInfo.city, markInfo.state)
     let fullBox = formatInfoBox(markInfo.name, markInfo.address, markInfo.city, markInfo.state, url)
     infoWindow.setContent(fullBox);
     infoWindow.setPosition(event.feature.getGeometry().get());
@@ -90,7 +83,7 @@ function initGeocodeMap(mapID, center, geoLocatedData) {
       let address = this.data.address_components[0].short_name + " " + this.data.address_components[1].short_name;
       let city = this.data.address_components[2].long_name;
       let state = this.data.address_components[4].short_name;
-      let url = addresstoUrl(address, city, state);
+      let url = addressToURL(address, city, state);
       let fullBox = formatInfoBox(name, address, city, state, url);
       infoWindow.setContent(fullBox);
       infoWindow.setPosition(this.data.geometry.location)

@@ -47,6 +47,7 @@ var CT = { //Connecticut centered location
   lng: -72.63,
 };
 var geocodedData = "geocodedLocations.json"
+
 initGeocodeMap(mainMap, CT, geocodedData)
 ```
 
@@ -65,5 +66,6 @@ var VT = { //Vermont centered location
   lng: -72.63,
 };
 var geoJSONVermontLibraries = "http://geodata.vermont.gov/datasets/3a87ceb1e3b944b89598abe6c4169f85_0.geojson"
-initGeocodeMap(mainMap, CT, geoJSONData,["LIBRARY","STREETAD","CITY","])
+
+initGeocodeMap(mainMap, CT, geoJSONData,["LIBRARY","STREETAD","CITY","COUNTY"])
 ```
