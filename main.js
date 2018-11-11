@@ -75,7 +75,7 @@ function initgeoJSONMap(mapID, center, geoJSONLink, info) {
   })
 }
 
-function initMap(mapID, center, geoLocatedData) {
+function initGeocodeMap(mapID, center, geoLocatedData) {
   'Creates a new map with plotted points given a map DIV id, a center for the map, and data that has been geocoded using the Google API.'
   let geocoded;
   var map = new google.maps.Map(document.getElementById(mapID), {
@@ -137,7 +137,7 @@ function main() {
   var geocoded = "https://raw.githubusercontent.com/theFatDads/GoogleMapsData/master/geo-locations.json"
   var drugBox = "https://data.ct.gov/api/geospatial/uem2-db2e?method=export&format=GeoJSON";
   var careFacilities = "https://data.ct.gov/resource/htz8-fxbk.json";
-  initMap(mainMap, CT, geocoded)
+  initGeocodeMap(mainMap, CT, geocoded)
   initgeoJSONMap("map2", CT, drugBox, ["location_name", "location_1_address", "city", "state"]);
 }
 main()
