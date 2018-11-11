@@ -13,9 +13,9 @@ String.prototype.caps = function () {
 function addressToURL(address,city,state){
   'Given an address, City, and state string, generates an address based on the users device'
   if ((navigator.platform.indexOf("iPhone") != -1) || (navigator.platform.indexOf("iPod") != -1) || (navigator.platform.indexOf("iPad") != -1)) {
-    return `https://maps.apple.com/?daddr=${address.split(" ").join("+")},+${city},+${state}`
+    return `https://maps.apple.com/?q=${address.split(" ").join("+")},+${city},+${state}`
   } else {
-    return `https://maps.apple.com/?daddr=${address.split(" ").join("+")},+${city},+${state}`
+    return `https://www.google.com/maps/dir/?api=1&destination=${address.split(" ").join("+")},+${city},+${state}`
   }
 }
 
