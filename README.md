@@ -8,7 +8,7 @@ We had two types of data to process: GeoJSON files and data which was processed 
 
 Therefore, we made this library which simplifies the entire process. Data2GoogleMap Does the dirty work of making a Google Map with plotted points, and outputs each marker with clickable point, with a link that redirects to Google Maps, or the user's default Map application on their phone.
 
-![Example](images/Example.png)
+![Example](https://raw.githubusercontent.com/theFatDads/GoogleMapsData/master/Images/Example.png)
 
 ## Installation
 To use these functions in your code, you must:
