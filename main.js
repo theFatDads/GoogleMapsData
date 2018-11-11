@@ -102,8 +102,6 @@ function initGeocodeMap(mapID, center, geoLocatedData) {
     }
   }
 }
-
-var geocoder = new google.maps.Geocoder(); //Creating the needed URL.
 function main() {
   var CT = { //Connecticut centered location
     lat: 41.5,
