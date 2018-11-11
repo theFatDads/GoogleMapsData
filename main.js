@@ -17,7 +17,7 @@ function addresstoUrl(address, city, state) {
 }
 
 function openMaps(url) {
-  'opens map in native maps app if on mobile, otherwise opens map url in google maps.'
+  'Opens map in native maps app if on mobile, otherwise opens map url in google maps.'
   if ((navigator.platform.indexOf("iPhone") != -1) || (navigator.platform.indexOf("iPod") != -1) || (navigator.platform.indexOf("iPad") != -1)) {
     window.open("maps://" + url.slice(12))
   } else {
@@ -27,22 +27,7 @@ function openMaps(url) {
 }
 
 function formatInfoBox(name, address, city, state, url) {
-  return `<div><h4>${name}</h4><div>${address} ${city}, ${state} <p><a onclick="openMaps('${url}')" href="#">Get Directions</a></p></div>`
-}
-
-function locate(geocoder, address) {
-  'Given an address string and a Google geocoder, returns an array with location information.'
-  geocoder.geocode({
-    'address': address,
-  }, function (results, status, geoResults) {
-    if (status == 'OK') {
-      var location = results[0].geometry.location;
-      console.log(results[0]);
-    } else {
-      return "ERROR";
-      console.log("Geolocation Error: " + status);
-    }
-  })
+  return `<b>${name}</b><p>${address} ${city}, ${state} \n</br><a onclick="openMaps('${url}')" href="#">Get Directions</a></p>`
 }
 
 function initgeoJSONMap(mapID, center, geoJSONLink, info) {
@@ -50,7 +35,8 @@ function initgeoJSONMap(mapID, center, geoJSONLink, info) {
   'Info should be a list with the property directory: [name, address, city, state]'
   var map = new google.maps.Map(document.getElementById(mapID), {
     center: center,
-    zoom: 9,
+    zoom: 7,
+    mapTypeControl: false,
   });
   map.data.loadGeoJson(geoJSONLink);
   var infoWindow = new google.maps.InfoWindow({
@@ -80,13 +66,11 @@ function initGeocodeMap(mapID, center, geoLocatedData) {
   let geocoded;
   var map = new google.maps.Map(document.getElementById(mapID), {
     center: center,
-    zoom: 9,
+    zoom: 7,
+    mapTypeControl: false
   });
   var infoWindow = new google.maps.InfoWindow({
     maxWidth: 300,
-  })
-  map.data.addListener('click', function () {
-    console.log("AH");
   })
   let request = new XMLHttpRequest();
   request.responseType = 'json';
@@ -94,8 +78,6 @@ function initGeocodeMap(mapID, center, geoLocatedData) {
   request.send();
   request.onload = function () {
     geocoded = request.response;
-    console.log("Recieved JSON File")
-    console.log(geocoded[0]);
     for (let i = 0; i < geocoded.length; i++) {
       let marker = new google.maps.Marker({
         position: geocoded[i].geometry.location,
@@ -104,7 +86,6 @@ function initGeocodeMap(mapID, center, geoLocatedData) {
         data: geocoded[i], //hopefully this just sets all data as a property of the marker.
       })
       marker.addListener('click',function(){
-        console.log(this)
       let name = this.data.name //TODO: ADD THIS PROPERTY WHEN GEOCODING.
       let address = this.data.address_components[0].short_name + " " + this.data.address_components[1].short_name;
       let city = this.data.address_components[2].long_name;
@@ -122,8 +103,8 @@ function initGeocodeMap(mapID, center, geoLocatedData) {
   }
 }
 
+var geocoder = new google.maps.Geocoder(); //Creating the needed URL.
 function main() {
-  var geocoder = new google.maps.Geocoder(); //Creating the needed URL.
   var CT = { //Connecticut centered location
     lat: 41.5,
     lng: -72.63,
